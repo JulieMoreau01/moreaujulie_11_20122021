@@ -1,24 +1,42 @@
-section {
-}
-
 section ul {
   background-color: #f6f6f6;
   border-radius: 25px;
   width: 100%;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   margin: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  section ul {
+    background-color: white;
+    padding: 0px;
+    flex-direction: column;
+  }
 }
 
 section ul li {
-  width: 340px;
+  width: 30%;
   height: 340px;
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
+  margin-right: 5%;
+}
+
+section ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media all and (max-width: 768px) {
+  section ul li {
+    width: 100%;
+    height: 255px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 }
 
 section ul figure {
@@ -30,9 +48,15 @@ section ul figure {
 
 section ul figure img {
   object-fit: cover;
-  width: 340px;
+  width: 100%;
   height: 340px;
   border-radius: 10px;
+}
+
+@media all and (max-width: 768px) {
+  section ul figure img {
+    height: 255px;
+  }
 }
 
 section ul figure figcaption {
@@ -45,9 +69,41 @@ section ul figure figcaption {
     rgba(255, 255, 255, 0) 0%,
     rgba(0, 0, 0, 0.5) 100%
   );
-  width: 340px;
+  width: 100%;
   height: 50%;
   display: flex;
   align-items: flex-end;
   border-radius: 10px;
+  font-size: 18px;
+}
+
+section h1.home_title {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(../assets/home_title.jpg);
+  background-position: center;
+  border-radius: 25px;
+  width: 100%;
+  height: 223px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px 0px 43px 0px;
+  padding: 20px;
+}
+
+@media all and (max-width: 768px) {
+  section h1.home_title {
+    font-size: 24px;
+    height: 111px;
+    border-radius: 10px;
+    margin: 0px 0px 22px 0px;
+  }
 }

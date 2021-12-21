@@ -6,7 +6,7 @@ class Home extends Component {
   render() {
     return (
       <section>
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1 className="home_title">Chez vous, partout et ailleurs</h1>
         <ul>
           {logements.map(({ cover, title, id }) => (
             <li key={id}>
