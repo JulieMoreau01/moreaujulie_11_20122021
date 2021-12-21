@@ -1,14 +1,25 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import Home from './pages/Home/Index'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import Error from './components/Error/Index'
 import reportWebVitals from './reportWebVitals'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import A_Propos from './pages/A_Propos/Index'
+import './styles/Index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Home />
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="A-Propos" element={<A_Propos />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 )

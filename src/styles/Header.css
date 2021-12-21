@@ -1,0 +1,56 @@
+header {
+  margin: 40px 0px 63px 0px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+header figure {
+  padding: 0px;
+  margin: 0px;
+}
+
+header img {
+  width: 210px;
+  height: auto;
+}
+
+@media all and (max-width: 768px) {
+  header img {
+    width: 145px;
+  }
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+header ul li:not(:first-child) {
+  margin-left: 57px;
+}
+
+@media all and (max-width: 768px) {
+  header ul li:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+header ul li a {
+  color: #ff6060;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+  header ul li a {
+    font-size: 12px;
+  }
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
