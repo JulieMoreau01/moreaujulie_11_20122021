@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './pages/Home/Index'
+import Home from './pages/Home'
+import Logements from './pages/Annonces'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error/Index'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import A_Propos from './pages/A_Propos/Index'
+import A_Propos from './pages/A_Propos'
 import './styles/Index.css'
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="A-Propos" element={<A_Propos />} />
+        <Route path="Annonces/:id" element={<Logements />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
