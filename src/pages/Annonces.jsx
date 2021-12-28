@@ -1,23 +1,13 @@
 import React, { Component } from 'react'
 import '../styles/Home.css'
+import Annonce from '../components/Annonce'
 import { useParams } from 'react-router-dom'
 
-class Logements extends React.Component {
+class Annonces extends React.Component {
   render() {
     const { id } = this.props.params
-    return (
-      <section>
-        <p>Carrousel {id}</p>
-        <h1>Le titre</h1>
-        <p>Localisation</p>
-        <ul>
-          <li>TAGS</li>
-        </ul>
-        <p>Description</p>
-        <p>Equipement</p>
-      </section>
-    )
+    return <Annonce id={id} />
   }
 }
 
-export default (props) => <Logements {...props} params={useParams()} />
+export default (props) => <Annonces {...props} params={useParams()} />

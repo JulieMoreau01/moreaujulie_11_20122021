@@ -6,7 +6,7 @@ import '../styles/Home.css'
 class Home extends Component {
   render() {
     return (
-      <section>
+      <section className="home">
         <h1 className="home_title">Chez vous, partout et ailleurs</h1>
         <ul>
           {logements.map(({ cover, title, id }) => (

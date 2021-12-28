@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Home from './pages/Home'
-import Logements from './pages/Annonces'
+import Annonces from './pages/Annonces'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error/Index'
@@ -17,7 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="A-Propos" element={<A_Propos />} />
-        <Route path="Annonces/:id" element={<Logements />} />
+        <Route path="Annonces/:id" element={<Annonces />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
