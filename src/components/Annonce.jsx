@@ -5,36 +5,28 @@ import '../styles/Annonces.css'
 class Annonce extends Component {
   render() {
     return (
-      <section className="annonces">
+      <React.Fragment>
         {logements
           .filter((logement) => logement.id === this.props.id)
           .map((logement) => (
-            <div>
+            <React.Fragment>
               <figure>
                 <img src={logement.cover} alt={logement.title} />
               </figure>
               <h1 key={logement.title}>{logement.title}</h1>
+              <figure className="host">
+                <img src={logement.host.picture} alt="" />
+                <figcaption>{logement.host.name}</figcaption>
+              </figure>
               <p className="location">{logement.location}</p>
               <ul className="tags">
                 {logement.tags.map((tag) => (
                   <li>{tag}</li>
                 ))}
               </ul>
-              <p>{logement.description}</p>
-              <p>Equipement</p>
-            </div>
+            </React.Fragment>
           ))}
-      </section>
-      // <section>
-      //   <p>Carrousel {this.props.id}</p>
-      //   <h1>Le titre</h1>
-      //   <p>Localisation</p>
-      //   <ul>
-      //     <li>TAGS</li>
-      //   </ul>
-      //   <p>Description</p>
-      //   <p>Equipement</p>
-      // </section>
+      </React.Fragment>
     )
   }
 }

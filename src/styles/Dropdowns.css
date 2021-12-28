@@ -1,0 +1,27 @@
+article.dropdowns {
+  width: 47%;
+}
+
+article.dropdowns:nth-child(6) {
+  margin-right: 6%;
+}
+
+article.dropdowns h2 {
+  color: white;
+  font-size: 18px;
+  background-color: #ff6060;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 0px;
+}
+
+article.dropdowns p,
+article.dropdowns ul {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #f6f6f6;
+  margin: 0px;
+  padding: 20px;
+  list-style: none;
+}
