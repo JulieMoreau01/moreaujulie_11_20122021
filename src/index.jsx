@@ -4,10 +4,9 @@ import Home from './pages/Home'
 import Annonces from './pages/Annonces'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Error from './components/Error/Index'
-import reportWebVitals from './reportWebVitals'
+import Error from './pages/Error'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import A_Propos from './pages/A_Propos'
+import APropos from './pages/A_Propos'
 import './styles/Index.css'
 
 ReactDOM.render(
@@ -16,7 +15,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="A-Propos" element={<A_Propos />} />
+        <Route path="A-Propos" element={<APropos />} />
         <Route path="Annonces/:id" element={<Annonces />} />
         <Route path="*" element={<Error />} />
       </Routes>
@@ -25,8 +24,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()

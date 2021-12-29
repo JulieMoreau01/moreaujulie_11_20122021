@@ -63,7 +63,7 @@ section.annonces ul.tags {
   padding: 0px;
   list-style: none;
   display: flex;
-  width: 100%;
+  width: 70%;
 }
 
 section.annonces ul.tags li {
@@ -74,4 +74,15 @@ section.annonces ul.tags li {
   margin-right: 10px;
   font-size: 14px;
   font-weight: 500;
+}
+
+section.annonces p.etoiles {
+  width: 30%;
+  margin: 0px;
+  text-align: right;
+}
+
+section.annonces p.etoiles img {
+  width: 30px;
+  height: 30px;
 }

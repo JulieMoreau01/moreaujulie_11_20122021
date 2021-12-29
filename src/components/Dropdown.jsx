@@ -1,29 +1,33 @@
 import React, { Component } from 'react'
 import { logements } from '../datas/logements'
 import '../styles/Dropdowns.css'
+import chevron from '../assets/chevron.svg'
 
 class Dropdown extends Component {
   render() {
     return (
-      <article className="dropdowns">
+      <details className="dropdowns" open>
+        <summary>
+          {this.props.name}
+          <img src={chevron} alt="chevron" />
+        </summary>
+        {this.props.text && <p>{this.props.text}</p>}
         {logements
           .filter((logement) => logement.id === this.props.id)
           .map((logement) => (
-            <React.Fragment>
-              <h2>{this.props.name}</h2>
-
+            <React.Fragment key={logement.id}>
               {this.props.name === 'Description' ? (
                 <p>{logement.description} </p>
               ) : (
                 <ul>
                   {logement.equipments.map((equipment) => (
-                    <li>{equipment}</li>
+                    <li key={equipment}>{equipment}</li>
                   ))}
                 </ul>
               )}
             </React.Fragment>
           ))}
-      </article>
+      </details>
     )
   }
 }
