@@ -21,7 +21,7 @@ class Annonce extends Component {
     }
 
     return (
-      <React.Fragment>
+      <section className="annonces">
         {logements
           .filter((logement) => logement.id === this.props.id)
           .map((logement) => (
@@ -40,7 +40,7 @@ class Annonce extends Component {
               <p className="etoiles">{nbStars}</p>
             </React.Fragment>
           ))}
-      </React.Fragment>
+      </section>
     )
   }
 }

@@ -6,7 +6,7 @@ import chevron from '../assets/chevron.svg'
 class Dropdown extends Component {
   render() {
     return (
-      <details className="dropdowns" open>
+      <details open>
         <summary>
           {this.props.name}
           <img src={chevron} alt="chevron" />

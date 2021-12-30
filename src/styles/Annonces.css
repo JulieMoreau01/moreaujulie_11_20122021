@@ -2,31 +2,30 @@ section.annonces {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-section.annonces figure {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-
-section.annonces figure img {
-  width: 100%;
-  height: 415px;
-  object-fit: cover;
-  border-radius: 25px;
+  align-items: center;
 }
 
 section.annonces h1 {
+  order: 1;
   font-size: 36px;
+  font-weight: 500;
   color: #ff6060;
   font-weight: 500;
   width: 80%;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 5px 0px;
   padding: 0px;
 }
 
+@media all and (max-width: 768px) {
+  section.annonces h1 {
+    font-size: 18px;
+    width: 100%;
+    margin: 15px 0px 5px 0px;
+  }
+}
+
 section.annonces figure.host {
+  order: 2;
   padding: 0px;
   margin: 30px 0px 0px 0px;
   width: 20%;
@@ -35,10 +34,26 @@ section.annonces figure.host {
   align-items: center;
 }
 
+@media all and (max-width: 768px) {
+  section.annonces figure.host {
+    order: 5;
+    width: 50%;
+    margin: 0px 0px 16px 0px;
+  }
+}
+
 section.annonces figure.host img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+}
+
+@media all and (max-width: 768px) {
+  section.annonces figure.host img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
 }
 
 section.annonces figure.host figcaption {
@@ -50,7 +65,14 @@ section.annonces figure.host figcaption {
   text-align: right;
 }
 
+@media all and (max-width: 768px) {
+  section.annonces figure.host figcaption {
+    font-size: 12px;
+  }
+}
+
 section.annonces p.location {
+  order: 3;
   font-size: 18px;
   color: #ff6060;
   font-weight: 500;
@@ -58,31 +80,78 @@ section.annonces p.location {
   margin: 0px 0px 20px 0px;
 }
 
+@media all and (max-width: 768px) {
+  section.annonces p.location {
+    order: 2;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+  }
+}
+
 section.annonces ul.tags {
+  order: 4;
   margin: 0px 0px 24px 0px;
   padding: 0px;
   list-style: none;
   display: flex;
   width: 70%;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 768px) {
+  section.annonces ul.tags {
+    order: 3;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
 }
 
 section.annonces ul.tags li {
+  font-size: 14px;
+  font-weight: 500;
   color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
   background-color: #ff6060;
   padding: 3px 40px;
   border-radius: 10px;
-  margin-right: 10px;
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0px 10px 6px 0px;
+}
+
+@media all and (max-width: 768px) {
+  section.annonces ul.tags li {
+    font-size: 10px;
+    padding: 2px 30px;
+    line-height: 10px;
+    border-radius: 5px;
+  }
 }
 
 section.annonces p.etoiles {
+  order: 5;
   width: 30%;
-  margin: 0px;
+  margin: 0px 0px 24px 0px;
   text-align: right;
+}
+
+@media all and (max-width: 768px) {
+  section.annonces p.etoiles {
+    order: 4;
+    width: 50%;
+    text-align: left;
+    margin: 0px;
+  }
 }
 
 section.annonces p.etoiles img {
   width: 30px;
   height: 30px;
+}
+
+@media all and (max-width: 768px) {
+  section.annonces p.etoiles img {
+    width: 15px;
+    height: 15px;
+  }
 }

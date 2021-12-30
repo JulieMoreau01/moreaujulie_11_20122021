@@ -19,9 +19,7 @@ class Carousel extends Component {
       .map((logement) => {
         logement.pictures.forEach((picture) => {
           imagesCarousel.push(
-            <figure key={picture}>
-              <img src={picture} alt={logement.title} />
-            </figure>
+            <img src={picture} alt={logement.title} key={logement.pictures} />
           )
         })
       })
@@ -56,7 +54,7 @@ class Carousel extends Component {
     }
     return (
       <section className="carousel">
-        {imagesCarousel[this.state.clicks]}
+        <figure>{imagesCarousel[this.state.clicks]}</figure>
         <button className="back" onClick={this.decrementClicks}>
           <img src={Chevronback} alt="" />
         </button>

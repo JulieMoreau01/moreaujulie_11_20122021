@@ -1,24 +1,64 @@
 section.carousel {
-  margin: 0px;
-  padding: 0px;
   width: 100%;
   position: relative;
 }
 
+section.carousel figure {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+section.carousel figure img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+@media all and (max-width: 768px) {
+  section.carousel figure img {
+    height: 255px;
+    border-radius: 10px;
+  }
+}
+
 section.carousel button.back {
   position: absolute;
-  left: 24px;
+  left: 90px;
   top: 40%;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
+@media all and (max-width: 768px) {
+  section.carousel button.back {
+    left: 24px;
+    top: 46%;
+  }
+  section.carousel button.back img {
+    width: 11px;
+    height: 19px;
+  }
+}
+
 section.carousel button.next {
   position: absolute;
-  right: 24px;
+  right: 90px;
   top: 40%;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  section.carousel button.next {
+    right: 24px;
+    top: 46%;
+  }
+  section.carousel button.next img {
+    width: 11px;
+    height: 19px;
+  }
 }

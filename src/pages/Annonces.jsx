@@ -9,12 +9,14 @@ class Annonces extends React.Component {
   render() {
     const { id } = this.props.params
     return (
-      <section className="annonces">
+      <React.Fragment>
         <Carousel id={id} />
         <Annonce id={id} />
-        <Dropdown id={id} name="Description" />
-        <Dropdown id={id} name="Equipement" />
-      </section>
+        <section className="dropdowns">
+          <Dropdown id={id} name="Description" />
+          <Dropdown id={id} name="Equipement" />
+        </section>
+      </React.Fragment>
     )
   }
 }
