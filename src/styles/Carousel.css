@@ -23,6 +23,10 @@ section.carousel figure img {
   }
 }
 
+section.carousel button.displayButton {
+  display: none;
+}
+
 section.carousel button.back {
   position: absolute;
   left: 90px;

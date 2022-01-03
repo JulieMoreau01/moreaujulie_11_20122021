@@ -13,6 +13,7 @@ class Carousel extends Component {
     }
   }
 
+  // Creat an Array with all the Pictures
   imagesCarouselArray = () => {
     logements
       .filter((logement) => logement.id === this.props.id)
@@ -25,6 +26,7 @@ class Carousel extends Component {
       })
   }
 
+  // If it's the last picture go back to 0 or add one
   incrementClicks = () => {
     if (this.state.clicks === imagesCarousel.length) {
       this.setState({
@@ -36,6 +38,8 @@ class Carousel extends Component {
       })
     }
   }
+
+  // If it's the first go to the last or remove one
   decrementClicks = () => {
     if (this.state.clicks === 0) {
       this.setState({
@@ -52,13 +56,21 @@ class Carousel extends Component {
     {
       this.imagesCarouselArray()
     }
+    // IF there is just one picture display none the button
+    const displayButton = imagesCarousel.length === 1 ? 'displayButton' : ''
     return (
       <section className="carousel">
         <figure>{imagesCarousel[this.state.clicks]}</figure>
-        <button className="back" onClick={this.decrementClicks}>
+        <button
+          className={`back ${displayButton}`}
+          onClick={this.decrementClicks}
+        >
           <img src={Chevronback} alt="" />
         </button>
-        <button className="next" onClick={this.incrementClicks}>
+        <button
+          className={`next ${displayButton}`}
+          onClick={this.incrementClicks}
+        >
           <img src={Chevronnext} alt="" />
         </button>
       </section>
