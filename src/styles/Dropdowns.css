@@ -96,6 +96,13 @@ section.a_propos details ul {
 }
 
 section.a_propos details {
-  width: 100%;
-  margin-bottom: 30px;
+  width: 80%;
+  margin: 0px auto 30px auto;
+}
+
+@media all and (max-width: 768px) {
+  section.a_propos details {
+    width: 100%;
+    margin: 0px auto 20px auto;
+  }
 }

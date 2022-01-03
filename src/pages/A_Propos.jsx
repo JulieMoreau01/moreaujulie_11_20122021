@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Dropdown from '../components/Dropdown'
+import hero from '../assets/propos_hero.jpg'
+import '../styles/A_propos.css'
 
 class APropos extends Component {
   fiabilite = 'Je suis le texte Fiabilité'
@@ -10,6 +12,9 @@ class APropos extends Component {
   render() {
     return (
       <section className="a_propos">
+        <figure>
+          <img src={hero} alt="kasa" />
+        </figure>
         <Dropdown name="Fiabilité" text={this.fiabilite} />
         <Dropdown name="Respect" text={this.respect} />
         <Dropdown name="Service" text={this.service} />
