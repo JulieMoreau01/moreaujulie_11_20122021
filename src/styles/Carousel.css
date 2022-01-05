@@ -7,6 +7,7 @@ section.carousel figure {
   margin: 0px;
   padding: 0px;
   width: 100%;
+  position: relative;
 }
 
 section.carousel figure img {
@@ -21,6 +22,16 @@ section.carousel figure img {
     height: 255px;
     border-radius: 10px;
   }
+}
+
+section.carousel figcaption {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 section.carousel button.displayButton {

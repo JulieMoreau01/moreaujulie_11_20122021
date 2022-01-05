@@ -26,6 +26,7 @@ class Carousel extends Component {
       })
 
     const numberOfPicture = imagesCarousel.length - 1
+    const displayPicture = this.state.clicks + 1
 
     // If it's the last picture go back to 0 or add one
     const incrementClicks = () => {
@@ -58,7 +59,12 @@ class Carousel extends Component {
 
     return (
       <section className="carousel">
-        <figure>{imagesCarousel[this.state.clicks]}</figure>
+        <figure>
+          {imagesCarousel[this.state.clicks]}
+          <figcaption>
+            {displayPicture} / {imagesCarousel.length}
+          </figcaption>
+        </figure>
         <button className={`back ${displayButton}`} onClick={decrementClicks}>
           <img src={Chevronback} alt="" />
         </button>

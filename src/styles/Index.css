@@ -9,14 +9,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media all and (max-width: 768px) {
-  body,
-  div#root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+body,
+div#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body section,
@@ -27,10 +24,12 @@ body header {
 
 body section {
   margin: 0px auto !important;
+  width: 100%;
 }
 
 body header {
-  margin: 40px auto 63px auto !important;
+  margin: 40px auto 25px auto !important;
+  width: 100%;
 }
 
 @media all and (max-width: 768px) {

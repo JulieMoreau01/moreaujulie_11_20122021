@@ -12,6 +12,7 @@ section.dropdowns {
 section.dropdowns details {
   width: 47%;
   min-height: 100%;
+  margin-bottom: 30px;
 }
 
 @media all and (max-width: 768px) {
@@ -56,6 +57,7 @@ section.a_propos details summary {
 section.dropdowns details summary img,
 section.a_propos details summary img {
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 section.dropdowns details:not([open]) summary img,
