@@ -9,7 +9,7 @@ class Dropdown extends Component {
       <details>
         <summary>
           {this.props.name}
-          <img src={chevron} alt="chevron" />
+          <img src={chevron} alt="information" />
         </summary>
         {this.props.text && <p>{this.props.text}</p>}
         {logements

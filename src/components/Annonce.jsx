@@ -28,7 +28,7 @@ class Annonce extends Component {
             <React.Fragment key={logement.id}>
               <h1>{logement.title}</h1>
               <figure className="host">
-                <img src={logement.host.picture} alt="" />
+                <img src={logement.host.picture} alt={logement.title} />
                 <figcaption>{logement.host.name}</figcaption>
               </figure>
               <p className="location">{logement.location}</p>

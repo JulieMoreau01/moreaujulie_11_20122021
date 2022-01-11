@@ -66,10 +66,10 @@ class Carousel extends Component {
           </figcaption>
         </figure>
         <button className={`back ${displayButton}`} onClick={decrementClicks}>
-          <img src={Chevronback} alt="" />
+          <img src={Chevronback} alt="Back" />
         </button>
         <button className={`next ${displayButton}`} onClick={incrementClicks}>
-          <img src={Chevronnext} alt="" />
+          <img src={Chevronnext} alt="Next" />
         </button>
       </section>
     )

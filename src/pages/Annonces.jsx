@@ -1,12 +1,11 @@
 import React from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import '../styles/Home.css'
 import Annonce from '../components/Annonce'
 import { useParams } from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 import Carousel from '../components/Carousel'
 import { logements } from '../datas/logements'
-//import { Route, Redirect } from 'react-router'
 
 class Annonces extends React.Component {
   render() {

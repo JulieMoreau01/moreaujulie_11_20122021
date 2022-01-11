@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <header>
         <figure>
-          <img src={logo} alt="" className="" />
+          <img src={logo} alt="kasa" />
         </figure>
         <ul>
           <li>

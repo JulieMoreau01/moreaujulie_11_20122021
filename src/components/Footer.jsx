@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <footer>
         <figure>
-          <img src={logoWhite} alt="" className="" />
+          <img src={logoWhite} alt="kasa" />
         </figure>
         <p>@2020 Kasa. All rights reserved</p>
       </footer>
