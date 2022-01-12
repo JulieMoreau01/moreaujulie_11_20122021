@@ -4,7 +4,7 @@ import '../styles/Annonces.css'
 import star from '../assets/star.svg'
 import starGray from '../assets/star-gray.svg'
 
-class Annonce extends Component {
+class Title_Annonce extends Component {
   render() {
     const nbStars = []
     {
@@ -45,4 +45,4 @@ class Annonce extends Component {
   }
 }
 
-export default Annonce
+export default Title_Annonce

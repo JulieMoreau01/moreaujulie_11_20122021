@@ -1,5 +1,5 @@
-import logoWhite from './../assets/logo_kasa_white.svg'
 import React, { Component } from 'react'
+import logoWhite from './../assets/logo_kasa_white.svg'
 import './../styles/Footer.css'
 
 class Footer extends Component {

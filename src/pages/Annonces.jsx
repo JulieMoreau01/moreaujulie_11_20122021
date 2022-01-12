@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navigate } from 'react-router-dom'
 import '../styles/Home.css'
-import Annonce from '../components/Annonce'
+import Title_Annonce from '../components/Title_Annonce'
 import { useParams } from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 import Carousel from '../components/Carousel'
@@ -16,7 +16,7 @@ class Annonces extends React.Component {
         return (
           <React.Fragment>
             <Carousel id={id} />
-            <Annonce id={id} />
+            <Title_Annonce id={id} />
             <section className="dropdowns">
               <Dropdown id={id} name="Description" />
               <Dropdown id={id} name="Equipement" />

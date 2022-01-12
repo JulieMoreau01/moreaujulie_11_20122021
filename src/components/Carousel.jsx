@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import '../styles/Carousel.css'
 import { logements } from '../datas/logements'
 import Chevronback from '../assets/chevron-caroussel-back.svg'
 import Chevronnext from '../assets/chevron-caroussel-next.svg'
+import '../styles/Carousel.css'
 
 class Carousel extends Component {
   constructor(props) {

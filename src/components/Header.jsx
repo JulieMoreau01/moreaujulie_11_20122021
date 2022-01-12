@@ -1,6 +1,6 @@
-import logo from './../assets/logo_kasa.svg'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import logo from './../assets/logo_kasa.svg'
 import './../styles/Header.css'
 
 class Header extends Component {
