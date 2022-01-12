@@ -40,9 +40,18 @@ section.a_propos details summary {
   padding: 10px 20px;
   border-radius: 10px;
   margin: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  outline: none;
+}
+
+section summary::-webkit-details-marker,
+section summary::marker {
+  display: none;
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  color: transparent;
+  content: '';
 }
 
 @media all and (max-width: 768px) {
@@ -58,6 +67,8 @@ section.dropdowns details summary img,
 section.a_propos details summary img {
   transition: all 0.5s;
   cursor: pointer;
+  margin-top: -5px;
+  float: right;
 }
 
 section.dropdowns details:not([open]) summary img,
@@ -70,6 +81,7 @@ section.a_propos details:not([open]) summary img {
   section.a_propos details summary img {
     width: 9px;
     height: 15px;
+    margin-top: 0px;
   }
 }
 
