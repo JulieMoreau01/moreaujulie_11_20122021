@@ -5,8 +5,8 @@ import Annonces from './pages/Annonces'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './pages/Error'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import APropos from './pages/A_Propos'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './styles/Index.css'
 
 ReactDOM.render(
