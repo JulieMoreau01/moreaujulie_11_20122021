@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/moreaujulie_11_20122021/static/css/main.b32d8429.css",
+    "main.js": "/moreaujulie_11_20122021/static/js/main.843a7922.js",
+    "static/media/propos_hero.jpg": "/moreaujulie_11_20122021/static/media/propos_hero.3827f97bdcef0854551d.jpg",
+    "static/media/home_title.jpg": "/moreaujulie_11_20122021/static/media/home_title.053687a54587bf187cfc.jpg",
+    "static/media/logo_kasa.svg": "/moreaujulie_11_20122021/static/media/logo_kasa.a6101328193bb3191cbcb50c120ec0d1.svg",
+    "static/media/logo_kasa_white.svg": "/moreaujulie_11_20122021/static/media/logo_kasa_white.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/moreaujulie_11_20122021/index.html",
+    "static/media/chevron-caroussel-next.svg": "/moreaujulie_11_20122021/static/media/chevron-caroussel-next.dd2c6c215896369fb9807a98b26ed251.svg",
+    "static/media/chevron-caroussel-back.svg": "/moreaujulie_11_20122021/static/media/chevron-caroussel-back.3529f3989e39b758930113b6f7a3d1d4.svg",
+    "static/media/star-gray.svg": "/moreaujulie_11_20122021/static/media/star-gray.38752bcafc1045fa6b545169fb0eb2eb.svg",
+    "static/media/star.svg": "/moreaujulie_11_20122021/static/media/star.a21f8abfc51a23975832b769119429bd.svg",
+    "static/media/chevron.svg": "/moreaujulie_11_20122021/static/media/chevron.e4fa47a025e2eade6bcee87c2deb3179.svg",
+    "main.b32d8429.css.map": "/moreaujulie_11_20122021/static/css/main.b32d8429.css.map",
+    "main.843a7922.js.map": "/moreaujulie_11_20122021/static/js/main.843a7922.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b32d8429.css",
+    "static/js/main.843a7922.js"
+  ]
+}
