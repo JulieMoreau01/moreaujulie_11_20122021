@@ -4,19 +4,10 @@ OPENCLASSROOMS Project 11 : Développez une application Web avec React et React 
 
 # DEPENDENCIES
 
-- Yarn [v1.22.5] (https://yarnpkg.com/).
-- React [v18] (https://fr.reactjs.org/).
+- React [v17.0.2](https://fr.reactjs.org/).
+- React-dom [v17.0.2]
 - React Router [v6.3.0](https://reactrouter.com/).
   `yarn add react-router-dom`
-- React redux [v4.2.0"] (https://redux.js.org/)
-- Redux Toolkit [1.8.1] (https://redux-toolkit.js.org/)
-- Mui UI library - material [5.6.0] (https://mui.com/)
-- Mui UI library - icons-material [5.6.0] (https://mui.com/components/material-icons/)
-- Mui UI library - styles [5.6.0] (https://mui.com/styles/basics/#main-content)
-- Mui UI library - x-data-grid [5.6.1] (https://mui.com/x/api/data-grid/data-grid/)
-- Mui UI library - x-data-grid-generator [5.8.0] (https://mui.com/x/api/data-grid/data-grid/)
-- Text editor: [Visual Studio Code] (https://code.visualstudio.com/).
-- Modal-openc-library [4.0.0]
 
 This project was bootstrapped with [Creat React App](https://create-react-app.dev/).
 
@@ -30,7 +21,7 @@ CSS : [CSS Modules Stylesheet](https://create-react-app.dev/docs/adding-a-css-mo
   `git init`
 
 - Clone The repository
-  `git clone https://github.com/JulieMoreau01/moreaujulie_14_18032022.git`
+  `git clone https://github.com/JulieMoreau01/moreaujulie_11_20122021.git`
 
 - The `yarn` command will allow you to install the dependencies.
 
