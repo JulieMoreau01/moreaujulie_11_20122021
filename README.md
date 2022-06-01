@@ -2,8 +2,6 @@
 
 OPENCLASSROOMS Project 11 : Développez une application Web avec React et React Router
 
-![KASA](https://raw.githubusercontent.com/JulieMoreau01/moreaujulie_14_17032022/main/src/assets/readme.png)
-
 # DEPENDENCIES
 
 - Yarn [v1.22.5] (https://yarnpkg.com/).
